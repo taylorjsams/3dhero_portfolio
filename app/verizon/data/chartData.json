@@ -1,0 +1,332 @@
+[
+    {
+        "id": 1,
+        "text": "As a sales person, I want access to training materials for the products in the catalog",
+        "shortText": "Training Materials Access",
+        "persona": "sales",
+        "x": 25,
+        "y": 92,
+        "priority": "high",
+        "context": "Critical for onboarding and product knowledge. Low technical lift with high user value."
+    },
+    {
+        "id": 2,
+        "text": "As a sales person, I need to be able to place the order",
+        "shortText": "Place Order",
+        "persona": "sales",
+        "x": 18,
+        "y": 88,
+        "priority": "high",
+        "context": "Core functionality - must be seamless and error-free."
+    },
+    {
+        "id": 3,
+        "text": "As a sales person, I want to add products to a cart without obstacles so that I can create a quote and make a sale",
+        "shortText": "Add to Cart",
+        "persona": "sales",
+        "x": 12,
+        "y": 82,
+        "priority": "high",
+        "context": "Fundamental e-commerce pattern. Reduces friction in the sales process."
+    },
+    {
+        "id": 4,
+        "text": "As a sales person, I need to create a quote",
+        "shortText": "Create Quote",
+        "persona": "sales",
+        "x": 22,
+        "y": 75,
+        "priority": "high",
+        "context": "Primary user task. Must support bulk operations."
+    },
+    {
+        "id": 5,
+        "text": "As a sales person, I need the customer to know the order has been placed",
+        "shortText": "Order Confirmation",
+        "persona": "sales",
+        "x": 8,
+        "y": 68,
+        "priority": "high",
+        "context": "Automated notifications reduce manual follow-up."
+    },
+    {
+        "id": 6,
+        "text": "As a sales person, I need to send an estimate to customers",
+        "shortText": "Send Estimate",
+        "persona": "sales",
+        "x": 15,
+        "y": 65,
+        "priority": "high",
+        "context": "PDF/email generation with branding."
+    },
+    {
+        "id": 7,
+        "text": "As a sales person, I need to be able to track the progress of an order",
+        "shortText": "Track Order Progress",
+        "persona": "sales",
+        "x": 28,
+        "y": 62,
+        "priority": "high",
+        "context": "Real-time status updates reduce support tickets."
+    },
+    {
+        "id": 8,
+        "text": "As a sales person, I need to be able to build an order from a quote so that I can finish the sales process",
+        "shortText": "Quote to Order",
+        "persona": "sales",
+        "x": 38,
+        "y": 90,
+        "priority": "high",
+        "context": "Seamless conversion from quote to order is critical."
+    },
+    {
+        "id": 9,
+        "text": "As a sales person, I want to be presented with potential enhancements to my cart",
+        "shortText": "Cart Enhancements",
+        "persona": "sales",
+        "x": 42,
+        "y": 78,
+        "priority": "medium",
+        "context": "Upsell/cross-sell recommendations powered by ML."
+    },
+    {
+        "id": 10,
+        "text": "As a sales person, I want the cart to intelligently bundle products as I add them",
+        "shortText": "Intelligent Bundling",
+        "persona": "sales",
+        "x": 45,
+        "y": 70,
+        "priority": "medium",
+        "context": "Automatic bundle detection and pricing optimization."
+    },
+    {
+        "id": 11,
+        "text": "As a solutions designer, I want to create a product so that it can be sold or added to bundles",
+        "shortText": "Create Product",
+        "persona": "designer",
+        "x": 55,
+        "y": 75,
+        "priority": "medium",
+        "context": "Product creation workflow with validation and approval."
+    },
+    {
+        "id": 12,
+        "text": "As a solutions architect, I want to establish API connections between BuSS and a vendor",
+        "shortText": "API Connections",
+        "persona": "architect",
+        "x": 62,
+        "y": 78,
+        "priority": "medium",
+        "context": "Technical integration requiring security review."
+    },
+    {
+        "id": 13,
+        "text": "As a sales person, I need to create a quote",
+        "shortText": "Create Quote (Bulk)",
+        "persona": "sales",
+        "x": 52,
+        "y": 68,
+        "priority": "medium",
+        "context": "Bulk quote creation for enterprise deals."
+    },
+    {
+        "id": 14,
+        "text": "As a solutions designer, I want to create a bundle so that sales are efficient and structured",
+        "shortText": "Create Bundle",
+        "persona": "designer",
+        "x": 92,
+        "y": 95,
+        "priority": "medium",
+        "context": "Complex bundle configuration with pricing rules."
+    },
+    {
+        "id": 15,
+        "text": "As a sales person, I want to know about bundles based on my customer's needs so that I can build the best possible quote",
+        "shortText": "Bundle Recommendations",
+        "persona": "sales",
+        "x": 78,
+        "y": 92,
+        "priority": "medium",
+        "context": "AI-powered recommendations based on customer profile."
+    },
+    {
+        "id": 16,
+        "text": "As a sales person, I want to see the discount rules being applied to my cart's products and bundles",
+        "shortText": "Discount Visibility",
+        "persona": "sales",
+        "x": 85,
+        "y": 85,
+        "priority": "medium",
+        "context": "Transparent pricing with rule explanations."
+    },
+    {
+        "id": 17,
+        "text": "As a sales person, I want to move products and services from one account line to another",
+        "shortText": "Move Products",
+        "persona": "sales",
+        "x": 72,
+        "y": 88,
+        "priority": "medium",
+        "context": "Drag-and-drop reorganization of quotes."
+    },
+    {
+        "id": 18,
+        "text": "As a solutions architect, I want to onboard a vendor so that their products can be added to the catalog",
+        "shortText": "Vendor Onboarding",
+        "persona": "architect",
+        "x": 68,
+        "y": 82,
+        "priority": "medium",
+        "context": "6-12 month process currently - needs automation."
+    },
+    {
+        "id": 19,
+        "text": "As a sales person, I want to freely browse the complete catalog of products and services so that I can learn or build carts",
+        "shortText": "Browse Catalog",
+        "persona": "sales",
+        "x": 82,
+        "y": 80,
+        "priority": "medium",
+        "context": "Searchable, filterable product catalog."
+    },
+    {
+        "id": 20,
+        "text": "As a sales person, I want to clone an existing/older quote to use as a template for a new quote",
+        "shortText": "Clone Quote",
+        "persona": "sales",
+        "x": 75,
+        "y": 72,
+        "priority": "medium",
+        "context": "Template system for recurring customers."
+    },
+    {
+        "id": 21,
+        "text": "As a sales person, I want to manage customer account to be able to merge, split, or consolidate",
+        "shortText": "Account Management",
+        "persona": "sales",
+        "x": 95,
+        "y": 65,
+        "priority": "low",
+        "context": "Complex account hierarchy management."
+    },
+    {
+        "id": 22,
+        "text": "As a sales person, I want access to commissions and incentives data so that I know what I'm incentivized to sell",
+        "shortText": "Commission Data",
+        "persona": "sales",
+        "x": 12,
+        "y": 48,
+        "priority": "medium",
+        "context": "Integration with compensation systems."
+    },
+    {
+        "id": 23,
+        "text": "As a sales person, I want access to sales analytics for products and bundles in a dashboard or product view",
+        "shortText": "Sales Analytics",
+        "persona": "sales",
+        "x": 35,
+        "y": 55,
+        "priority": "medium",
+        "context": "Performance dashboards and reporting."
+    },
+    {
+        "id": 24,
+        "text": "As a solutions designer, I want to import multiple products at one time so that it doesn't take as long",
+        "shortText": "Bulk Import",
+        "persona": "designer",
+        "x": 65,
+        "y": 52,
+        "priority": "medium",
+        "context": "CSV/Excel import with validation."
+    },
+    {
+        "id": 25,
+        "text": "As a sales person, I need to create a customer account on the fly so that I can build carts for them",
+        "shortText": "Quick Account Creation",
+        "persona": "sales",
+        "x": 58,
+        "y": 58,
+        "priority": "medium",
+        "context": "Streamlined customer onboarding."
+    },
+    {
+        "id": 26,
+        "text": "As a solutions designer, I want to attach files from the vendor to the product record",
+        "shortText": "Attach Files",
+        "persona": "designer",
+        "x": 18,
+        "y": 32,
+        "priority": "low",
+        "context": "Document management for product specs."
+    },
+    {
+        "id": 27,
+        "text": "As a sales person, I want to view comparisons between products so that I can make my own conclusions about which to sell",
+        "shortText": "Product Comparison",
+        "persona": "sales",
+        "x": 28,
+        "y": 38,
+        "priority": "low",
+        "context": "Side-by-side feature comparison."
+    },
+    {
+        "id": 28,
+        "text": "As a sales person, I need to know when an order has been completed",
+        "shortText": "Order Completion",
+        "persona": "sales",
+        "x": 72,
+        "y": 35,
+        "priority": "low",
+        "context": "Notification system integration."
+    },
+    {
+        "id": 29,
+        "text": "As a sales person, I need to know the order will be billed properly",
+        "shortText": "Billing Verification",
+        "persona": "sales",
+        "x": 78,
+        "y": 30,
+        "priority": "low",
+        "context": "Billing system integration and validation."
+    },
+    {
+        "id": 30,
+        "text": "As a sales person, I want to view customer feedback on products so that I can see possible problems",
+        "shortText": "Customer Feedback",
+        "persona": "sales",
+        "x": 55,
+        "y": 25,
+        "priority": "low",
+        "context": "Feedback aggregation from multiple sources."
+    },
+    {
+        "id": 31,
+        "text": "As a sales person, I want to know that everything is working as specified",
+        "shortText": "System Health",
+        "persona": "sales",
+        "x": 48,
+        "y": 18,
+        "priority": "low",
+        "context": "Status dashboard and monitoring."
+    },
+    {
+        "id": 32,
+        "text": "As a solutions designer, I want to set pricing and margin options for bundles so that each channel gets its own pricing rules",
+        "shortText": "Channel Pricing",
+        "persona": "designer",
+        "x": 68,
+        "y": 15,
+        "priority": "low",
+        "context": "Complex pricing engine with channel rules."
+    },
+    {
+        "id": 33,
+        "text": "As a solutions designer, I want to see my product approved by a solutions administrator",
+        "shortText": "Product Approval",
+        "persona": "designer",
+        "x": 25,
+        "y": 8,
+        "priority": "low",
+        "context": "Approval workflow with notifications."
+    }
+]
