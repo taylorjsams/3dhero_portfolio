@@ -8,6 +8,7 @@ import Navbar from "@/components/dom/Navbar";
 import Loader from "@/components/dom/Loader";
 import HeroBackgroundGrid from "@/components/dom/HeroBackgroundGrid";
 import Footer from "@/components/dom/Footer";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,6 +58,20 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground overflow-x-hidden`}
       >
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-3C2D6FD3XK"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-3C2D6FD3XK');
+          `}
+        </Script>
         <HeroBackgroundGrid />
         <Scene>
           <ProceduralHero />
