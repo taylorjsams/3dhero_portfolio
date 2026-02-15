@@ -69,7 +69,7 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col gap-4 min-w-[200px]">
+                <div className="flex flex-col gap-4 w-full md:w-auto items-center md:items-start [&>*]:w-full [&>*]:max-w-md md:[&>*]:w-[200px] md:[&>*]:max-w-none">
                     <LiveClock />
                     <WeatherWidget />
                     <SocialLinks />

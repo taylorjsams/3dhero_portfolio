@@ -1,7 +1,7 @@
 'use client'
 
 import { useRef, useMemo } from 'react'
-import { useFrame } from '@react-three/fiber'
+import { useFrame, useThree } from '@react-three/fiber'
 import * as THREE from 'three'
 import { useScrollStore } from '@/store'
 import { usePathname } from 'next/navigation'
@@ -132,6 +132,7 @@ vec3 blendShapes(vec3 pos, vec3 normal, float shapeIndex) {
 `
 
 export default function ProceduralHero({ mode = 'scroll', targetShape }: { mode?: 'scroll' | 'static', targetShape?: number }) {
+    const { viewport } = useThree()
     const meshRef = useRef<THREE.Mesh>(null)
     const wireframeMeshRef = useRef<THREE.Mesh>(null)
     const materialRef = useRef<THREE.MeshPhysicalMaterial>(null)
@@ -214,11 +215,12 @@ export default function ProceduralHero({ mode = 'scroll', targetShape }: { mode?
             const targetX = x * 1.5
             const targetY = y * 1.5
 
-            // Re-implement position logic
-            let scrollOffsetX = 2
-            if (scrollFactor > 0.15 && scrollFactor < 0.35) scrollOffsetX = 2.5
-            if (scrollFactor > 0.40 && scrollFactor < 0.60) scrollOffsetX = 1.8
-            if (scrollFactor > 0.65 && scrollFactor < 0.85) scrollOffsetX = 2.2
+            // Responsive position logic
+            const isMobile = viewport.width < 6
+            let scrollOffsetX = isMobile ? 0.5 : 2
+            if (scrollFactor > 0.15 && scrollFactor < 0.35) scrollOffsetX = isMobile ? 0.8 : 2.5
+            if (scrollFactor > 0.40 && scrollFactor < 0.60) scrollOffsetX = isMobile ? 0.3 : 1.8
+            if (scrollFactor > 0.65 && scrollFactor < 0.85) scrollOffsetX = isMobile ? 0.6 : 2.2
 
             meshRef.current.position.x = THREE.MathUtils.lerp(meshRef.current.position.x, targetX + scrollOffsetX, 0.05)
             meshRef.current.position.y = THREE.MathUtils.lerp(meshRef.current.position.y, targetY, 0.05)
