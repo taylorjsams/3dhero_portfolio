@@ -23,8 +23,8 @@ export default function TreasuryDashboardPage() {
                 subtitle="Crafting a Streamlined Dashboard for Intelligent Treasury Operations"
                 tags={["Fintech", "Data Viz", "Service Design"]}
                 role="Lead Designer"
-                duration="Aug 2023 - Dec 2023"
-                tools="Figma, Miro, Pens + Postits"
+                duration="January 2025 - June 2025"
+                tools="Figma, Miro, Pens + Sticky Notes"
                 industry="Financial Services"
             />
 
@@ -79,7 +79,7 @@ export default function TreasuryDashboardPage() {
                             design language, often appearing as isolated responses to individual client demands.
                         </p>
                         <p>
-                            There were major gaps in the data covered, missing essential services like wires status, real-time, and tokenized payments.
+                            There were major gaps in the data covered, missing essential services like wire status, real-time, and tokenized payments.
                             Clients also had no access to their cash positions or any insights into their cash flow leading to operational inefficiencies.
                         </p>
                     </div>
@@ -148,7 +148,7 @@ export default function TreasuryDashboardPage() {
                 <ContentSection className="max-w-5xl">
                     <SectionHeader title="Methodology" />
                     <p className="text-base text-silver font-light antialiased leading-relaxed max-w-3xl mb-12 text-center md:text-left">
-                        This project&apos;s design phase kicked off in January 2025, culminating in June 2025 when our high-fidelity prototypes were successfully handed off to the development team. Throughout this period, we progressed through several distinct stages: starting with in-depth Discovery and Requirements gathering, moving into crucial Tech collaboration, followed by comprehensive Ideation, Low-Fidelity design, and finally, detailed High-Fidelity prototyping.
+                        This project&apos;s design phase kicked off in January 2025, culminating in June 2025 when our high-fidelity prototypes were successfully handed off to the development team. Throughout this period, we progressed through several distinct stages: starting with in-depth Discovery and Requirements gathering, moving into crucial Technical collaboration, followed by comprehensive Ideation, Low-Fidelity design, and finally, detailed High-Fidelity prototyping.
                     </p>
 
                     <Timeline />

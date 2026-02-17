@@ -16,11 +16,11 @@ export default function VerizonPage() {
         <main className="min-h-screen">
             {/* Section 1: Hero */}
             <CaseStudyHero
-                title="Verizon BUSS 2.0"
+                title="Verizon BuSS 2.0"
                 subtitle="Imagining an innovative & robust sales tool for incredible bulk volume quote-building and catalog management"
                 tags={["Enterprise UX", "Product Design", "UX Research"]}
                 role="UX Designer"
-                duration="6 Weeks"
+                duration="April 2023 - August 2023"
                 tools="Sketch, Adobe Creative Suite, Full Story"
                 industry="Telecommunications"
             />
@@ -36,7 +36,7 @@ export default function VerizonPage() {
                                 Verizon has a nationally recognizable brand and an incredible marketing team - they&apos;ve always been pretty capable of designing their own products and experiences. However, they&apos;re very aware that data-intense or complex software experiences are just not their forté. In addition to that they have no internal resources to conduct unbiased research.
                             </p>
                             <p>
-                                This was the motivation behind our first engagement together - their internal sales tools have become a terribly inefficient mess and all attempts to design a solution have failed to yield any successful results. We don&apos;t have to design the whole thing today, but if we can paint an attractive picture of what this product might look like and give its stakeholders adequate research to justify building it, then we will have been successful in cementing our role as their &quot;guaranteed success&quot; strategic design partner.
+                                This was the motivation behind our first engagement together - their internal sales tools have become a terribly inefficient mess and all attempts to design a solution have failed to yield any successful results. We don&apos;t have to design the whole thing today, but if we can paint an attractive picture of what this product might look like and give its stakeholders adequate research to justify building it, then we will have established ourselves as the go-to partner for complex, high-stakes enterprise transformations.
                             </p>
                         </div>
                         <div className="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 backdrop-blur-sm">
@@ -185,7 +185,7 @@ export default function VerizonPage() {
                                         "All discounts are handled manually, no rule-based opportunities",
                                         "Takes 6-12 months to add partners to the platform",
                                         "No way to group packages for sales",
-                                        "Partner APIs frequently fail and outdated"
+                                        "Partner APIs fail frequently and are outdated"
                                     ]
                                 }
                             ].map((persona, i) => (
@@ -244,7 +244,7 @@ export default function VerizonPage() {
                         </div>
 
                         <p className="text-base text-silver font-light antialiased leading-relaxed max-w-4xl">
-                            Through the course of developing these Personas, we identified key workflows that any redesigned system would need to address. Among them: On-boarding new vendors, products, and product bundles. Educating salespeople on the products that they&apos;re expected to sell. Giving salespeople access to tools to help them optimize sales opportunities. Building and tracking quotes.
+                            Through the course of developing these Personas, we identified key workflows that any redesigned system would need to address. Among them: Onboarding new vendors, products, and product bundles. Educating salespeople on the products that they&apos;re expected to sell. Giving salespeople access to tools to help them optimize sales opportunities. Building and tracking quotes.
                         </p>
 
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -430,6 +430,9 @@ export default function VerizonPage() {
                                 { label: "Correct Quote Delivery", value: "95%" }
                             ]}
                         />
+                        <p className="text-silver/40 text-sm font-light tracking-wide italic">
+                            (Projected based on usability testing of high-fidelity prototypes)
+                        </p>
                     </div>
                 </ContentSection>
             </div>

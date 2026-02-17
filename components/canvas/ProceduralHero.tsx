@@ -215,8 +215,10 @@ export default function ProceduralHero({ mode = 'scroll', targetShape }: { mode?
             const targetX = x * 1.5
             const targetY = y * 1.5
 
-            // Responsive position logic
+            // Responsive position and scale logic
             const isMobile = viewport.width < 6
+            const responsiveScale = isMobile ? 1.8 : 2.5
+
             let scrollOffsetX = isMobile ? 0.5 : 2
             if (scrollFactor > 0.15 && scrollFactor < 0.35) scrollOffsetX = isMobile ? 0.8 : 2.5
             if (scrollFactor > 0.40 && scrollFactor < 0.60) scrollOffsetX = isMobile ? 0.3 : 1.8
@@ -224,6 +226,9 @@ export default function ProceduralHero({ mode = 'scroll', targetShape }: { mode?
 
             meshRef.current.position.x = THREE.MathUtils.lerp(meshRef.current.position.x, targetX + scrollOffsetX, 0.05)
             meshRef.current.position.y = THREE.MathUtils.lerp(meshRef.current.position.y, targetY, 0.05)
+
+            // Update scale responsively
+            meshRef.current.parent?.scale.setScalar(THREE.MathUtils.lerp(meshRef.current.parent.scale.x, responsiveScale, 0.05))
 
             // Sync wireframe mesh
             if (wireframeMeshRef.current) {

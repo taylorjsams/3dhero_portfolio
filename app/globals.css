@@ -30,12 +30,25 @@
   }
 }
 
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+}
+
 @utility shimmer {
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
   background-size: 200% 100%;
   -webkit-background-clip: text;
   background-clip: text;
   animation: shimmer 3s infinite linear;
+}
+
+@utility animate-bounce-subtle {
+  animation: bounce-subtle 3s ease-in-out infinite;
 }
 
 body {

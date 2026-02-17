@@ -2,7 +2,7 @@ import Section from "@/components/dom/Section"
 import LiveClock from "@/components/dom/LiveClock"
 import WeatherWidget from "@/components/dom/WeatherWidget"
 import SocialLinks from "@/components/dom/SocialLinks"
-import { Briefcase, GraduationCap, MousePointer2, Download } from "lucide-react"
+import { Briefcase, GraduationCap, MousePointer2, Download, Waypoints } from "lucide-react"
 
 export default function About() {
     const experience = [
@@ -43,7 +43,7 @@ export default function About() {
             <Section className="flex flex-col md:flex-row gap-12 items-start justify-between max-w-6xl mx-auto px-6">
                 <div className="flex-1 text-left">
                     <h1 className="text-3xl md:text-5xl font-thin text-white tracking-tight mb-8">
-                        A Little About Me 👋
+                        A Little About Me <Waypoints className="inline-block w-8 h-8 text-violet-500 ml-2 mb-2 animate-bounce-subtle" />
                     </h1>
                     <p className="text-silver font-light text-base tracking-wide leading-relaxed max-w-2xl">
                         I&apos;m <span className="text-white font-medium">a builder by trade</span> and a creator by heart. From my early days as an architect to my current role leading product design in the financial services space, I&apos;ve spent my career obsessing over how people move through spaces—both physical and digital. I don&apos;t just &apos;make things look good&apos;; I build systems that work.

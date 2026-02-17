@@ -31,6 +31,8 @@ export default function Navbar() {
                     Work
                 </Link>
 
+                <Link href="/play" className="hover:text-white/70 transition-colors duration-300">Play</Link>
+
                 <Link href="/about" className="hover:text-white/70 transition-colors duration-300">About</Link>
 
                 <Link href="mailto:taylorjsams@gmail.com" className="hover:text-white/70 transition-colors duration-300 flex items-center gap-2">
@@ -38,6 +40,6 @@ export default function Navbar() {
                     <span>Contact</span>
                 </Link>
             </div>
-        </nav>
+        </nav >
     )
 }

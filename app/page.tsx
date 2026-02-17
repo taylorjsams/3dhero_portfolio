@@ -1,8 +1,7 @@
 import Section from "@/components/dom/Section";
 import CaseStudyOverlay from "@/components/dom/CaseStudyOverlay";
-import SectionHeader from "@/components/case-study/SectionHeader";
-import VisualExplorations from "@/components/dom/VisualExplorations";
 import HeroVignette from "@/components/dom/HeroVignette";
+import SandboxTeaser from "@/components/dom/SandboxTeaser";
 
 export default function Home() {
   return (
@@ -31,7 +30,7 @@ export default function Home() {
         index="01"
         title="Payments Re-Imagined"
         tags={["Product Design", "Strategy", "Innovation"]}
-        description="A strateic solution that centralizes payments, and liqutidy services for financial and corporate treasury clients"
+        description="A strategic solution that centralizes payments, and liquidity services for financial and corporate treasury clients"
         role="Product Designer"
         duration="Jan 2024 - Present"
         tools="Figma, Gemini"
@@ -65,11 +64,7 @@ export default function Home() {
         href="/verizon"
       />
 
-      {/* Art Gallery */}
-      <Section className="min-h-screen py-24 flex flex-col items-center snap-start w-full max-w-6xl px-6">
-        <SectionHeader title="Visual Explorations" />
-        <VisualExplorations />
-      </Section>
+      <SandboxTeaser />
     </main>
   );
 }

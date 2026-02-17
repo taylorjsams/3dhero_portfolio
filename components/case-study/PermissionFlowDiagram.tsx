@@ -90,7 +90,7 @@ const masterWidgetGrid = [
     { id: "Insights", label: "Insights" },
     { id: "Recent Activity", label: "Activity" },
     { id: "File Import Status", label: "File Status" },
-    { id: "Digital Archive", label: "Digi Archive" },
+    { id: "Digital Archive", label: "Digital Archive" },
 ]
 
 
