@@ -58,3 +58,13 @@ body {
   overflow-x: hidden;
   /* Prevent horizontal scroll */
 }
+
+@keyframes loading-bar {
+  0% { left: -100%; width: 100%; }
+  50% { left: 0%; width: 100%; }
+  100% { left: 100%; width: 100%; }
+}
+
+@utility loading-bar-animate {
+  animation: loading-bar 1.4s ease-in-out infinite;
+}
