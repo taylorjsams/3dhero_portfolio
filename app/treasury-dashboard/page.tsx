@@ -211,8 +211,8 @@ export default function TreasuryDashboardPage() {
                         A direct comparison showing the transformation from the legacy system to the new unified dashboard.
                     </p>
                     <BeforeAfterSlider
-                        beforeImage="/dashboard_before.jpg"
-                        afterImage="/dashboard_finaldesign.jpg"
+                        beforeImage="/dashboard_before.webp"
+                        afterImage="/dashboard_finaldesign.webp"
                     />
                 </ContentSection>
             </div> */}

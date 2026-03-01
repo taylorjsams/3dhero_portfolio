@@ -17,63 +17,63 @@ interface ExplorationImage {
 const ALL_IMAGES: ExplorationImage[] = [
     {
         id: 'graphic-landing',
-        src: '/visualexplorations/graphiclanding.jpg',
+        src: '/visualexplorations/graphiclanding.webp',
         title: 'Homogenic Spatial Conditions',
         description: 'A study in iterative geometry and textural density. This exploration investigates the transition from rigid structural repetition to fluid, organic forms through parametric layering and light-reflective surfacing.',
         medium: 'Digital Rendering'
     },
     {
         id: 'tech-04',
-        src: '/visualexplorations/tech04_small.jpg',
+        src: '/visualexplorations/tech04_small.webp',
         title: 'Technical Study 04',
         description: 'A study of a projective drawing technique that uses intersections of sections to generate scaled 3D forms.',
         medium: 'Pen and Ink on Mylar'
     },
     {
         id: 'tech-06',
-        src: '/visualexplorations/tech06_small.jpg',
+        src: '/visualexplorations/tech06_small.webp',
         title: 'Technical Study 06',
         description: 'Simple form is abstracted by a lack of context.',
         medium: 'Pen, Ink, and Spraypaint on Mylar'
     },
     {
         id: 'ultramaroon-slider',
-        src: '/visualexplorations/ultramaroon_slider.jpg',
+        src: '/visualexplorations/ultramaroon_slider.webp',
         title: 'UltraMaroon Concept',
         description: 'UI exploration for a nighlife brand, focusing on deep color palettes and high-contrast typography.',
         medium: 'Digital Illustration'
     },
     {
         id: 'um-landing',
-        src: '/visualexplorations/um_landingimage2.jpg',
+        src: '/visualexplorations/um_landingimage2.webp',
         title: 'Ultramaroon Photo Concept',
         description: 'Photography and digital compositing for a nighlife brand.',
         medium: 'Digital Illustration'
     },
     {
         id: 'viz-01',
-        src: '/visualexplorations/vizimages-01.jpg',
+        src: '/visualexplorations/vizimages-01.webp',
         title: 'Visual Research 01',
         description: 'Part 1/3 of series exploring lighting conditions and material properties.',
         medium: 'Digital Rendering'
     },
     {
         id: 'viz-02',
-        src: '/visualexplorations/vizimages-02.jpg',
+        src: '/visualexplorations/vizimages-02.webp',
         title: 'Visual Research 02',
         description: 'Part 2/3 of series exploring lighting conditions and material properties.',
         medium: 'Digital Rendering'
     },
     {
         id: 'viz-03',
-        src: '/visualexplorations/vizimages-03.jpg',
+        src: '/visualexplorations/vizimages-03.webp',
         title: 'Visual Research 03',
         description: 'Part 3/3 of series exploring lighting conditions and material properties.',
         medium: 'Digital Rendering'
     },
     {
         id: 'viz-09',
-        src: '/visualexplorations/vizimages-09.jpg',
+        src: '/visualexplorations/vizimages-09.webp',
         title: 'Wine Section',
         description: 'A perspective section through a series of architectural volumes.',
         medium: 'Digital Rendering'

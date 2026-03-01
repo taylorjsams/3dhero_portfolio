@@ -9,7 +9,7 @@ const screens = [
     {
         id: 'sales-dashboard',
         label: 'Sales Dashboard',
-        image: '/verizon/final_salesdashboard.jpg',
+        image: '/verizon/final_salesdashboard.webp',
         persona: {
             name: 'Francis',
             role: 'Sales / B2B',
@@ -20,7 +20,7 @@ const screens = [
     {
         id: 'product-quote-dock',
         label: 'Product & Quote Dock',
-        image: '/verizon/final_quotedock.jpg',
+        image: '/verizon/final_quotedock.webp',
         persona: {
             name: 'Francis',
             role: 'Sales / B2B',
@@ -31,7 +31,7 @@ const screens = [
     {
         id: 'quote-management',
         label: 'Quote Management',
-        image: '/verizon/final_quotemanage.jpg',
+        image: '/verizon/final_quotemanage.webp',
         persona: {
             name: 'Francis',
             role: 'Sales / B2B',
@@ -42,7 +42,7 @@ const screens = [
     {
         id: 'solutions-dashboard',
         label: 'Solutions Dashboard',
-        image: '/verizon/final_productdashboard.jpg',
+        image: '/verizon/final_productdashboard.webp',
         persona: {
             name: 'Shae',
             role: 'Product / Solutions',
