@@ -166,6 +166,7 @@ export default function VisualExplorations() {
                         <button
                             onClick={closeModal}
                             className="absolute top-8 right-8 text-white/50 hover:text-white transition-colors z-[110]"
+                            aria-label="Close modal"
                         >
                             <X size={32} />
                         </button>
@@ -179,6 +180,7 @@ export default function VisualExplorations() {
                                 <button
                                     onClick={handlePrev}
                                     className="p-4 text-white/30 hover:text-white transition-colors"
+                                    aria-label="Previous image"
                                 >
                                     <ChevronLeft size={48} />
                                 </button>
@@ -187,6 +189,7 @@ export default function VisualExplorations() {
                                 <button
                                     onClick={handleNext}
                                     className="p-4 text-white/30 hover:text-white transition-colors"
+                                    aria-label="Next image"
                                 >
                                     <ChevronRight size={48} />
                                 </button>
@@ -261,8 +264,8 @@ export default function VisualExplorations() {
 
                                 {/* Mobile Navigation Arrows */}
                                 <div className="flex md:hidden items-center gap-12">
-                                    <button onClick={handlePrev} className="p-4 text-white/50"><ChevronLeft size={32} /></button>
-                                    <button onClick={handleNext} className="p-4 text-white/50"><ChevronRight size={32} /></button>
+                                    <button onClick={handlePrev} className="p-4 text-white/50" aria-label="Previous image"><ChevronLeft size={32} /></button>
+                                    <button onClick={handleNext} className="p-4 text-white/50" aria-label="Next image"><ChevronRight size={32} /></button>
                                 </div>
                             </div>
                         </div>

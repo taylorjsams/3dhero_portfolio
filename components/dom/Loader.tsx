@@ -1,22 +1,20 @@
 'use client'
 import { useProgress } from '@react-three/drei'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default function Loader() {
     const { progress } = useProgress()
     const [show, setShow] = useState(true)
+    const hasFinished = useRef(false)
 
     useEffect(() => {
-        if (progress === 100) {
+        if (progress === 100 && !hasFinished.current) {
+            hasFinished.current = true
             const timer = setTimeout(() => setShow(false), 500)
             return () => clearTimeout(timer)
         }
-        if (!show) {
-            const t = setTimeout(() => setShow(true), 0)
-            return () => clearTimeout(t)
-        }
-    }, [progress, show])
+    }, [progress])
 
     return (
         <AnimatePresence>

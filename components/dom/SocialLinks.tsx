@@ -34,6 +34,7 @@ export default function SocialLinks() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`flex items-center justify-between group transition-colors ${social.color}`}
+                        aria-label={social.name}
                     >
                         <div className="flex items-center gap-3">
                             <span className="text-white/40 group-hover:text-inherit transition-colors">

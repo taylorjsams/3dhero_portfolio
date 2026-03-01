@@ -80,7 +80,7 @@ export default function TreasuryDashboardPage() {
                         </p>
                         <p>
                             There were major gaps in the data covered, missing essential services like wire status, real-time, and tokenized payments.
-                            Clients also had no access to their cash positions or any insights into their cash flow leading to operational inefficiencies.
+                            Clients also had no live view of their cash positions or any insights into their cash flow leading to operational inefficiencies.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-start">

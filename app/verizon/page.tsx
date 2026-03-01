@@ -95,7 +95,7 @@ export default function VerizonPage() {
                                     aspect: "aspect-[21/9]"
                                 }
                             ].map((diagram, i) => (
-                                <div key={i} className="group bg-zinc-100/20 border border-zinc-600 rounded-3xl overflow-hidden backdrop-blur-sm">
+                                <div key={i} className="group pt-6 bg-zinc-100/20 border border-zinc-600 rounded-3xl overflow-hidden backdrop-blur-sm">
                                     <div className={`relative ${diagram.aspect}`}>
                                         <Image
                                             src={diagram.src}

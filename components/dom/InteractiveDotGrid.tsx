@@ -21,6 +21,11 @@ export default function InteractiveDotGrid() {
         const mouse = { x: -1000, y: -1000 }
         const maxDistance = 150
         const pullStrength = 0.4
+        const FRAME_INTERVAL = 1000 / 30 // ~30 FPS cap
+
+        let isVisible = true
+        let animationFrameId: number
+        let lastFrameTime = 0
 
         const dots: { x: number; y: number; baseX: number; baseY: number }[] = []
 
@@ -56,13 +61,34 @@ export default function InteractiveDotGrid() {
         window.addEventListener('mousemove', handleMouseMove)
         document.body.addEventListener('mouseleave', handleMouseLeave)
 
-        let animationFrameId: number
+        // --- IntersectionObserver: pause when off-screen ---
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                isVisible = entry.isIntersecting
+                if (isVisible) {
+                    lastFrameTime = 0
+                    animationFrameId = requestAnimationFrame(render)
+                }
+            },
+            { threshold: 0 }
+        )
+        observer.observe(canvas)
 
-        const render = () => {
+        const render = (timestamp: number = 0) => {
+            if (!isVisible) return
+
+            // --- FPS throttle ---
+            if (timestamp - lastFrameTime < FRAME_INTERVAL) {
+                animationFrameId = requestAnimationFrame(render)
+                return
+            }
+            lastFrameTime = timestamp
+
             ctx.clearRect(0, 0, width, height)
             ctx.fillStyle = 'rgba(255, 255, 255, 0.2)'
 
-            dots.forEach((dot) => {
+            for (let i = 0; i < dots.length; i++) {
+                const dot = dots[i]
                 const dx = mouse.x - dot.baseX
                 const dy = mouse.y - dot.baseY
                 const distance = Math.sqrt(dx * dx + dy * dy)
@@ -72,14 +98,15 @@ export default function InteractiveDotGrid() {
                     dot.x = dot.baseX + dx * pull
                     dot.y = dot.baseY + dy * pull
                 } else {
-                    dot.x += (dot.baseX - dot.x) * 0.1 // return to normal smoothly
+                    dot.x += (dot.baseX - dot.x) * 0.1
                     dot.y += (dot.baseY - dot.y) * 0.1
                 }
 
                 ctx.beginPath()
                 ctx.arc(dot.x, dot.y, radius, 0, Math.PI * 2)
                 ctx.fill()
-            })
+            }
+
             animationFrameId = requestAnimationFrame(render)
         }
 
@@ -90,6 +117,7 @@ export default function InteractiveDotGrid() {
             window.removeEventListener('mousemove', handleMouseMove)
             document.body.removeEventListener('mouseleave', handleMouseLeave)
             cancelAnimationFrame(animationFrameId)
+            observer.disconnect()
         }
     }, [])
 
