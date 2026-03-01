@@ -95,7 +95,7 @@ export default function TreasuryDashboardPage() {
                         </div>
                         <div className="md:col-span-2 rounded-2xl overflow-hidden bg-white/80 border border-white/10 shadow-lg group">
                             <Image
-                                src="/dashboard_before.jpg"
+                                src="/dashboard_before.webp"
                                 alt="Legacy Interface"
                                 width={1600}
                                 height={1200}

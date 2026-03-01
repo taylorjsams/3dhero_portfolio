@@ -154,7 +154,7 @@ export default function VerizonPage() {
                                     name: "Francis",
                                     role: "Sales / B2B",
                                     personaType: "sales",
-                                    image: "/verizon/new_persona_francis.jpg",
+                                    image: "/verizon/new_persona_francis.webp",
                                     problem: "Francis is a sales executive specializing in B2B sales. He wants to build stronger relationships with Verizon customers. Francis wants to get to know customers more and see what sticks.",
                                     challenges: [
                                         "Partner content is outdated because it's manually updated",
@@ -167,7 +167,7 @@ export default function VerizonPage() {
                                     name: "Shae",
                                     role: "Product / Business Solutions",
                                     personaType: "designer",
-                                    image: "/verizon/new_persona_shae.jpg",
+                                    image: "/verizon/new_persona_shae.webp",
                                     problem: "Shae is a Solutions Designer for small to midsize business products. She wants a better way to find products and manage the solutions she's creating.",
                                     challenges: [
                                         "Finding products across multiple BuSS catalogs",
@@ -179,7 +179,7 @@ export default function VerizonPage() {
                                     name: "Carmen",
                                     role: "Channel / Manager",
                                     personaType: "architect",
-                                    image: "/verizon/new_persona_carmen.jpg",
+                                    image: "/verizon/new_persona_carmen.webp",
                                     problem: "Carmen is a senior manager for the BuSS who needs a better way to manage pricing and discounts across catalogs and bundles.",
                                     challenges: [
                                         "All discounts are handled manually, no rule-based opportunities",
@@ -269,7 +269,7 @@ export default function VerizonPage() {
                             </div>
                             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10">
                                 <Image
-                                    src="/verizon/r_userprocess.jpg"
+                                    src="/verizon/r_userprocess.webp"
                                     alt="User Process Workflow"
                                     fill
                                     className="object-cover"
@@ -299,19 +299,19 @@ export default function VerizonPage() {
                         <div className="flex flex-col gap-12">
                             {[
                                 {
-                                    src: "/verizon/sketch_nav.jpg",
+                                    src: "/verizon/sketch_nav.webp",
                                     alt: "Navigation Sketch",
                                     title: "Project Navigation",
                                     desc: "Early explorations of the information architecture and navigation hierarchy."
                                 },
                                 {
-                                    src: "/verizon/sketch_quotebuilder.jpg",
+                                    src: "/verizon/sketch_quotebuilder.webp",
                                     alt: "Quote Builder Sketch",
                                     title: "Quote Builder",
                                     desc: "Conceptual sketches for the drag-and-drop quote building interface."
                                 },
                                 {
-                                    src: "/verizon/sketch_quotemanage.jpg",
+                                    src: "/verizon/sketch_quotemanage.webp",
                                     alt: "Quote Workflow",
                                     title: "Quote Management Workflow",
                                     desc: "Defining the lifecycle of a quote from draft to approval."
