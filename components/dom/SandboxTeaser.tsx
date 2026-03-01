@@ -11,10 +11,10 @@ export default function SandboxTeaser() {
                 {/* Title and Line (Matching Case Study Styling) */}
                 <div className="relative mb-6">
                     <h2 className="text-3xl md:text-5xl font-thin text-white tracking-wider mb-2 whitespace-nowrap uppercase">
-                        Sandbox
+                        Off the Clock
                     </h2>
                     <h3 className="text-xl md:text-2xl font-extralight text-silver/60 tracking-tight mb-4">
-                        Unstructured Play
+                        Space for Personal Explorations
                     </h3>
                     {/* Horizontal Line with Dot connecting to 3D space */}
                     <div className="flex items-center w-full">
@@ -27,7 +27,7 @@ export default function SandboxTeaser() {
                     {/* Left Column: Body Text & CTA */}
                     <div className="space-y-8 max-w-xl">
                         <p className="text-silver font-light text-lg md:text-xl leading-relaxed">
-                            Some of my favorite work happens when I stop following the rules. While my case studies show how I solve business problems, the Play page is where I break things. Explore a collection of 3D experiments, art, and prototypes that had to get out of my head and into the world.
+                            I spent my early career obsessing over how people move through physical spaces—a discipline built on rules, physics, and strict constraints. My &apos;Play&apos; page is where I let those constraints go. It&apos;s a digital archive of the experiments, 3D sculptures, and prototypes that started as &apos;what if&apos; moments and became a way for me to push the boundaries of what I can build.
                         </p>
 
                         <motion.div
@@ -40,7 +40,7 @@ export default function SandboxTeaser() {
                                 href="/play"
                                 className="inline-flex items-center gap-3 px-10 py-4 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl text-white text-xs uppercase tracking-[0.2em] font-light hover:bg-white/10 hover:border-white/30 transition-all duration-300 group"
                             >
-                                Enter the Sandbox
+                                Explore
                                 <motion.div
                                     animate={{ x: 0, y: 0 }}
                                     whileHover={{ x: 2, y: -2 }}
