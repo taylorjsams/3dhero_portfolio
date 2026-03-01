@@ -19,7 +19,7 @@ export function Effects({ performance }: EffectsProps) {
     const bloomIntensity = isHome ? 1.5 + scrollProgress * 0.5 : 1.5
 
     return (
-        <EffectComposer enableNormalPass={false} multisampling={performance === 'high' ? 8 : 0}>
+        <EffectComposer enableNormalPass={false} multisampling={performance === 'high' ? 0 : 0}>
             <Bloom
                 intensity={bloomIntensity}
                 luminanceThreshold={0.2}

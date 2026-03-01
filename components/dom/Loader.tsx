@@ -4,17 +4,40 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 
 export default function Loader() {
-    const { progress } = useProgress()
+    const { progress, active, item } = useProgress()
     const [show, setShow] = useState(true)
     const hasFinished = useRef(false)
+    const activeRef = useRef(active)
 
     useEffect(() => {
-        if (progress === 100 && !hasFinished.current) {
+        // Track if it was ever active
+        if (active) activeRef.current = true
+
+        // Finish condition:
+        // 1. Progress is 100%
+        // 2. OR it was active and is now inactive (loading finished)
+        // 3. OR it's been mounted for 1.5s and never became active (no assets to load)
+        const isFinished =
+            progress === 100 ||
+            (activeRef.current && !active)
+
+        if (isFinished && !hasFinished.current) {
             hasFinished.current = true
             const timer = setTimeout(() => setShow(false), 500)
             return () => clearTimeout(timer)
         }
-    }, [progress])
+    }, [progress, active])
+
+    useEffect(() => {
+        // Fallback for scenes with absolutely zero external assets
+        const timer = setTimeout(() => {
+            if (!hasFinished.current && !activeRef.current) {
+                hasFinished.current = true
+                setShow(false)
+            }
+        }, 1500)
+        return () => clearTimeout(timer)
+    }, [])
 
     return (
         <AnimatePresence>

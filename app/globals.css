@@ -31,9 +31,12 @@
 }
 
 @keyframes bounce-subtle {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10%);
   }
@@ -60,11 +63,36 @@ body {
 }
 
 @keyframes loading-bar {
-  0% { left: -100%; width: 100%; }
-  50% { left: 0%; width: 100%; }
-  100% { left: 100%; width: 100%; }
+  0% {
+    left: -100%;
+    width: 100%;
+  }
+
+  50% {
+    left: 0%;
+    width: 100%;
+  }
+
+  100% {
+    left: 100%;
+    width: 100%;
+  }
 }
 
 @utility loading-bar-animate {
   animation: loading-bar 1.4s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@utility animate-fade-in {
+  animation: fade-in 0.75s ease-in-out forwards;
 }

@@ -1,4 +1,4 @@
-'use client'
+
 
 import CaseStudyHero from "@/components/case-study/CaseStudyHero"
 import ContentSection from "@/components/case-study/ContentSection"
@@ -9,9 +9,16 @@ import StatsGrid from "@/components/case-study/StatsGrid"
 
 import SectionHeader from "@/components/case-study/SectionHeader"
 import Image from "next/image"
-import RelationalNodeMap from "@/components/case-study/RelationalNodeMap"
-import PermissionFlowDiagram from "@/components/case-study/PermissionFlowDiagram"
+import dynamic from 'next/dynamic'
 import ProjectNavigation from "@/components/case-study/ProjectNavigation"
+
+const RelationalNodeMap = dynamic(() => import("@/components/case-study/RelationalNodeMap"), {
+    loading: () => <div className="h-96 w-full animate-pulse bg-white/5 rounded-2xl border border-white/10" />
+})
+
+const PermissionFlowDiagram = dynamic(() => import("@/components/case-study/PermissionFlowDiagram"), {
+    loading: () => <div className="h-96 w-full animate-pulse bg-white/5 rounded-2xl border border-white/10" />
+})
 import { Plus } from "lucide-react"
 
 export default function TreasuryDashboardPage() {

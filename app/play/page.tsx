@@ -1,4 +1,4 @@
-'use client'
+
 
 import Section from "@/components/dom/Section";
 import SectionHeader from "@/components/case-study/SectionHeader";

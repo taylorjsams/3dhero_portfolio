@@ -1,7 +1,7 @@
 'use client'
 
 import { Canvas } from '@react-three/fiber'
-import { Preload, Environment, PerformanceMonitor } from '@react-three/drei'
+import { Preload, Environment, PerformanceMonitor, Lightformer } from '@react-three/drei'
 import { useState } from 'react'
 import { Effects } from './Effects'
 
@@ -31,7 +31,17 @@ export default function Scene({ children, ...props }: any) {
         />
         <pointLight position={[-10, -10, -5]} intensity={2} color="#223355" />
 
-        <Environment preset="city" blur={1} />
+        <Environment resolution={256} frames={1}>
+          {/* Main Key Light */}
+          <Lightformer intensity={4} rotation-x={Math.PI / 2} position={[0, 5, -9]} scale={[10, 10, 1]} color="#eef2ff" />
+          {/* Fill Light */}
+          <Lightformer intensity={2} rotation-x={Math.PI / 2} position={[0, 5, 9]} scale={[10, 10, 1]} color="#eef2ff" />
+          {/* Side accents */}
+          <Lightformer intensity={2} rotation-y={Math.PI / 2} position={[-50, 2, 0]} scale={[100, 2, 1]} color="#223355" />
+          <Lightformer intensity={2} rotation-y={-Math.PI / 2} position={[50, 2, 0]} scale={[100, 2, 1]} color="#223355" />
+          {/* Ambient Fill */}
+          <Lightformer form="rect" intensity={1} position={[0, -5, 0]} rotation-x={-Math.PI / 2} scale={[50, 50, 1]} color="#180037ff" />
+        </Environment>
 
         {children}
         <Effects performance={performance} />

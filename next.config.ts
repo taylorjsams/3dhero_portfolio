@@ -1,6 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Optimize large external packages to only bundle what is actually used
+  experimental: {
+    optimizePackageImports: ['lucide-react', '@react-three/drei', 'framer-motion'],
+  },
+  // Automatically serve modern image formats when supported by the browser
+  images: {
+    formats: ['image/avif', 'image/webp'],
+  },
   async rewrites() {
     return [
       {

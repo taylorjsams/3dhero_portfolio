@@ -1,4 +1,4 @@
-'use client'
+
 
 import CaseStudyHero from "@/components/case-study/CaseStudyHero"
 import ContentSection from "@/components/case-study/ContentSection"
@@ -6,9 +6,16 @@ import SectionHeader from "@/components/case-study/SectionHeader"
 import Image from "next/image"
 import { clsx } from "clsx"
 import { MoveDownRight, Check, ListChecks, DatabaseZap, ChartColumn } from "lucide-react"
-import ImpactEffortScatterPlot from "@/components/verizon/ImpactEffortScatterPlot"
-import VerizonGallery from "@/components/verizon/VerizonGallery"
+import dynamic from 'next/dynamic'
 import ProjectNavigation from "@/components/case-study/ProjectNavigation"
+
+const ImpactEffortScatterPlot = dynamic(() => import("@/components/verizon/ImpactEffortScatterPlot"), {
+    loading: () => <div className="h-96 w-full animate-pulse bg-white/5 rounded-2xl border border-white/10" />
+})
+
+const VerizonGallery = dynamic(() => import("@/components/verizon/VerizonGallery"), {
+    loading: () => <div className="h-[600px] w-full animate-pulse bg-white/5 rounded-[2.5rem] border border-white/10" />
+})
 import StatsGrid from "@/components/case-study/StatsGrid"
 
 export default function VerizonPage() {
