@@ -6,7 +6,7 @@ export default function SandboxTeaser() {
     return (
         <Section className="min-h-screen flex flex-col items-center justify-center snap-start w-full max-w-7xl px-6 md:px-12 relative overflow-hidden">
 
-            <div className="w-full relative z-10">
+            <div className="w-full relative z-10 mb-8">
                 <div className="w-full rounded-[2.5rem] border border-white/10 bg-zinc-900 backdrop-blur-xl p-8 md:p-16 relative">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                         {/* Left Column: Content */}
@@ -20,14 +20,12 @@ export default function SandboxTeaser() {
                                     Off the <span className="italic text-white/90">Clock</span>
                                 </h2>
                                 <p className="text-lg md:text-xl font-extralight text-silver/60 tracking-tight">
-                                    A space for digital play & technical curiosities
+                                    Curiosity in Forms & Functions
                                 </p>
                             </div>
 
                             <p className="text-silver font-light text-base md:text-lg leading-relaxed max-w-lg">
-                                I spent my early career obsessing over how people move through physical spaces.
-                                This &apos;Play&apos; page is where I let those constraints go—a digital archive of experiments
-                                where rules are meant to be tested, and pixels are meant to dance.
+                                I spent my early career obsessing over how people move through physical spaces—a discipline built on progam, materiality physics, and strict parameters. My Play page is where I continue to explore those threads in other mediums. It's a digital archive of the experiments, 3D sculptures, and prototypes that started as 'what if' moments and became a way for me to push the boundaries of what I can build.
                             </p>
 
                             <div className="transform transition-transform hover:scale-105 active:scale-95 duration-200 inline-block">

@@ -26,17 +26,11 @@ export default function PlayPage() {
                 <SectionHeader title="Interactive Projects" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
                     {/* Placeholder for future projects */}
-                    <div className="group relative aspect-video glass rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all flex flex-col items-center justify-center p-8 text-center bg-white/5">
-                        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                        <h3 className="text-white text-2xl font-light mb-2 relative z-10">Coming Soon</h3>
-                        <p className="text-silver/60 text-sm font-extralight relative z-10 mb-6">
-                            New projects will appear here as they are deployed.
-                        </p>
-                        <div className="flex gap-2 relative z-10">
-                            <span className="px-3 py-1 rounded-full border border-white/10 text-xs text-silver/60">React</span>
-                            <span className="px-3 py-1 rounded-full border border-white/10 text-xs text-silver/60">Three.js</span>
-                        </div>
-                    </div>
+                    <Link href="#" className="group relative aspect-video glass rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all flex flex-col items-center justify-center p-8 text-center bg-white/5 cursor-not-allowed opacity-50">
+                        <ArrowUpRight className="text-white/20 group-hover:text-white/60 mb-4 transition-colors" size={48} />
+                        <h3 className="text-white text-xl font-light mb-1">Coming Soon</h3>
+                        <p className="text-silver/40 text-sm font-extralight">New projects will appear here as they are deployed.</p>
+                    </Link>
 
                     <Link href="#" className="group relative aspect-video glass rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all flex flex-col items-center justify-center p-8 text-center bg-white/5 cursor-not-allowed opacity-50">
                         <ArrowUpRight className="text-white/20 group-hover:text-white/60 mb-4 transition-colors" size={48} />
