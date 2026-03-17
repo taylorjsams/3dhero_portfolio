@@ -26,13 +26,13 @@ export default function PlayPage() {
                 <SectionHeader title="Interactive Projects" />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
                     {/* Placeholder for future projects */}
-                    <Link href="#" className="group relative aspect-video glass rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all flex flex-col items-center justify-center p-8 text-center bg-white/5 cursor-not-allowed opacity-50">
+                    <Link href="#" className="group relative aspect-video backdrop-blur-lg rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all flex flex-col items-center justify-center p-8 text-center bg-white/5 cursor-not-allowed opacity-50">
                         <ArrowUpRight className="text-white/20 group-hover:text-white/60 mb-4 transition-colors" size={48} />
                         <h3 className="text-white text-xl font-light mb-1">Coming Soon</h3>
                         <p className="text-silver/40 text-sm font-extralight">New projects will appear here as they are deployed.</p>
                     </Link>
 
-                    <Link href="#" className="group relative aspect-video glass rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all flex flex-col items-center justify-center p-8 text-center bg-white/5 cursor-not-allowed opacity-50">
+                    <Link href="#" className="group relative aspect-video backdrop-blur-lg rounded-2xl overflow-hidden border border-white/10 hover:border-white/20 transition-all flex flex-col items-center justify-center p-8 text-center bg-white/5 cursor-not-allowed opacity-50">
                         <ArrowUpRight className="text-white/20 group-hover:text-white/60 mb-4 transition-colors" size={48} />
                         <h3 className="text-white text-xl font-light mb-1">Coming Soon</h3>
                         <p className="text-silver/40 text-sm font-extralight">New projects will appear here as they are deployed.</p>

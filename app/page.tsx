@@ -13,7 +13,7 @@ export default function Home() {
           <h1 className="text-6xl md:text-[5rem] font-thin tracking-tighter text-white mix-blend-overlay leading-none whitespace-nowrap">
             Taylor Sams
           </h1>
-          <div className="glass p-6 rounded-2xl w-full max-w-md backdrop-blur-xl bg-white/5 border border-white/10 mt-12">
+          <div className="p-6 rounded-2xl w-full max-w-md backdrop-blur-lg bg-white/5 border border-white/10 mt-12">
             <h2 className="text-xl font-light text-white mb-2">Digital Product Designer</h2>
             <p className="text-silver font-extralight text-base leading-relaxed">
               Hi nice to meet you, I&apos;m currently a digital product designer at BNY, I use my background in architecture to bridge the gap between human needs and technical systems.

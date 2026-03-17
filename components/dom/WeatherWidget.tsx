@@ -94,7 +94,7 @@ export default function WeatherWidget() {
     return (
         <motion.div
             whileHover={{ scale: 1.02 }}
-            className={`glass px-6 py-4 rounded-xl flex flex-col border border-white/10 bg-white/5 backdrop-blur-md relative overflow-hidden transition-all duration-500 ${weather?.isCloudy ? 'after:content-[""] after:absolute after:inset-0 after:bg-[url("https://grainy-gradients.vercel.app/noise.svg")] after:opacity-[0.03] after:pointer-events-none' : ''}`}
+            className={`px-6 py-4 rounded-xl flex flex-col border border-white/10 bg-white/5 backdrop-blur-md relative overflow-hidden transition-all duration-500 ${weather?.isCloudy ? 'after:content-[""] after:absolute after:inset-0 after:bg-[url("https://grainy-gradients.vercel.app/noise.svg")] after:opacity-[0.03] after:pointer-events-none' : ''}`}
         >
             <div className="flex justify-between items-start mb-4">
                 {getWeatherIcon()}

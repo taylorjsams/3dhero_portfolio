@@ -22,7 +22,7 @@ export default function SocialLinks() {
     return (
         <motion.div
             whileHover={{ scale: 1.02 }}
-            className="glass px-6 py-4 rounded-xl flex flex-col border border-white/10 bg-white/5 backdrop-blur-md"
+            className="px-6 py-4 rounded-xl flex flex-col border border-white/10 bg-white/5 backdrop-blur-md"
         >
             <span className="text-silver text-xs uppercase tracking-[0.2em] mb-4">Connect</span>
 

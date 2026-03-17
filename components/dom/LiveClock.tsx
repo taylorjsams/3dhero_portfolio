@@ -25,7 +25,7 @@ export default function LiveClock() {
     return (
         <motion.div
             whileHover={{ scale: 1.05 }}
-            className="glass px-6 py-4 rounded-xl flex flex-col items-center justify-center border border-white/10 bg-white/5 backdrop-blur-md"
+            className="px-6 py-4 rounded-xl flex flex-col items-center justify-center border border-white/10 bg-white/5 backdrop-blur-md"
         >
             <span className="text-silver text-xs uppercase tracking-widest mb-1">New York, NY</span>
             <div className="text-2xl font-mono text-white tabular-nums tracking-widest">

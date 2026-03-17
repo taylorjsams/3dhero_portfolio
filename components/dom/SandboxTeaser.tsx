@@ -4,10 +4,10 @@ import Link from "next/link"
 
 export default function SandboxTeaser() {
     return (
-        <Section className="min-h-screen flex flex-col items-center justify-center snap-start w-full max-w-7xl px-6 md:px-12 relative overflow-hidden">
+        <Section className="min-h-screen flex flex-col items-center justify-center snap-start w-full max-w-7xl px-6 md:px-12 relative">
 
             <div className="w-full relative z-10 mb-8">
-                <div className="w-full rounded-[2.5rem] border border-white/10 bg-zinc-900 backdrop-blur-xl p-8 md:p-16 relative">
+                <div className="w-full rounded-[2.5rem] backdrop-blur-lg bg-white/5 border border-white/10 p-8 md:p-16 relative">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                         {/* Left Column: Content */}
                         <div className="space-y-8 flex flex-col items-start text-left">
@@ -17,7 +17,7 @@ export default function SandboxTeaser() {
                                     <span className="text-[10px] uppercase tracking-[0.3em] text-silver/60 font-medium">Experimental Lab</span>
                                 </div>
                                 <h2 className="text-3xl md:text-5xl font-thin text-white tracking-wider mb-4">
-                                    Off the <span className="italic text-white/90">Clock</span>
+                                    Off the Clock
                                 </h2>
                                 <p className="text-lg md:text-xl font-extralight text-silver/60 tracking-tight">
                                     Curiosity in Forms & Functions

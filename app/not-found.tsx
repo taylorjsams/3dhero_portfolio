@@ -23,7 +23,7 @@ export default function NotFound() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="glass p-8 rounded-2xl max-w-sm w-full backdrop-blur-sm bg-white/5 border border-white/10 flex flex-col items-center text-center"
+          className="p-8 rounded-2xl max-w-sm w-full backdrop-blur-sm bg-white/5 border border-white/10 flex flex-col items-center text-center"
         >
           {/* Tag */}
           <div className="px-3 py-1 rounded-full border border-red-500/50 bg-red-500/5 text-[10px] uppercase tracking-wider text-red-500 backdrop-blur-md mb-6">

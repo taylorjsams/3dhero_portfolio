@@ -136,7 +136,7 @@ export default function VisualExplorations() {
                         viewport={{ once: true }}
                         transition={{ delay: index * 0.1 }}
                         onClick={() => setActiveIndex(index)}
-                        className="group relative aspect-square glass rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-white/20 transition-all"
+                        className="group relative aspect-square backdrop-blur-lg bg-white/5 rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-white/20 transition-all"
                     >
                         <Image
                             src={image.src}

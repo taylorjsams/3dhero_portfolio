@@ -57,7 +57,7 @@ export default function GlobalError({ error }: ErrorProps) {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-                    className="mt-[-1rem] glass p-8 rounded-2xl max-w-sm w-full backdrop-blur-xl bg-white/5 border border-white/10"
+                    className="mt-[-1rem] p-8 rounded-2xl max-w-sm w-full backdrop-blur-xl bg-white/5 border border-white/10"
                 >
                     <h2 className="text-xl font-light text-white mb-3 tracking-tight">
                         Something went wrong

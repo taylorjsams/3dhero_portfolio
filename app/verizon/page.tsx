@@ -46,7 +46,7 @@ export default function VerizonPage() {
                                 This was the motivation behind our first engagement together - their internal sales tools have become a terribly inefficient mess and all attempts to design a solution have failed to yield any successful results. We don&apos;t have to design the whole thing today, but if we can paint an attractive picture of what this product might look like and give its stakeholders adequate research to justify building it, then we will have established ourselves as the go-to partner for complex, high-stakes enterprise transformations.
                             </p>
                         </div>
-                        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 backdrop-blur-sm">
+                        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 backdrop-blur-lg">
                             <h3 className="text-2xl text-white font-light mb-6">The Challenge</h3>
                             <div className="relative mb-8">
                                 <blockquote className="text-base text-white italic font-light leading-relaxed">

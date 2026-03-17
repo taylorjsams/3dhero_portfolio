@@ -22,7 +22,7 @@ export default function PaymentsPlaceholder() {
                     transition={{ duration: 0.8 }}
                     className="relative z-10 w-full max-w-2xl text-center"
                 >
-                    <div className="glass p-12 md:p-20 rounded-[2rem] border border-white/10 backdrop-blur-2xl bg-white/[0.02] shadow-2xl relative overflow-hidden group">
+                    <div className="p-12 md:p-20 rounded-[2rem] border border-white/10 backdrop-blur-lg bg-white/5 shadow-2xl relative overflow-hidden group">
                         {/* Animated Glow */}
                         <div className="absolute -top-24 -left-24 w-48 h-48 bg-white/5 rounded-full blur-3xl group-hover:bg-white/10 transition-colors duration-700" />
 

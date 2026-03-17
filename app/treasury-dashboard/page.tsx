@@ -61,10 +61,10 @@ export default function TreasuryDashboardPage() {
 
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-start gap-4">
-                                        <Plus className="w-5 h-5 mt-1 shrink-0 text-violet-400" />
+                                        <Plus className="w-5 h-5 mt-1 shrink-0 text-violet-500" />
                                         <div className="flex flex-col gap-1 text-left">
                                             <span className="text-white font-medium text-base">{item.q}</span>
-                                            <span className="text-silver/60 text-base font-light leading-relaxed">{item.a}</span>
+                                            <span className="text-silver text-base font-light leading-relaxed">{item.a}</span>
                                         </div>
                                     </li>
                                 ))}
@@ -155,7 +155,7 @@ export default function TreasuryDashboardPage() {
                 <ContentSection className="max-w-5xl">
                     <SectionHeader title="Methodology" />
                     <p className="text-base text-silver font-light antialiased leading-relaxed max-w-3xl mb-12 text-center md:text-left">
-                        This project&apos;s design phase kicked off in January 2025, culminating in June 2025 when our high-fidelity prototypes were successfully handed off to the development team. Throughout this period, we progressed through several distinct stages: starting with in-depth Discovery and Requirements gathering, moving into crucial Technical collaboration, followed by comprehensive Ideation, Low-Fidelity design, and finally, detailed High-Fidelity prototyping.
+                        This project&apos;s main design phase kicked off in January 2025, and continued through June 2025 when our high-fidelity prototypes were successfully handed off to the development team. Testing and refinement is ongoing.  Throughout this period, we progressed through several distinct stages: starting with in-depth Discovery and Requirements gathering, moving into crucial Technical collaboration, followed by comprehensive Ideation, Low-Fidelity design, and finally, detailed High-Fidelity prototyping.
                     </p>
 
                     <Timeline />

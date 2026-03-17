@@ -80,6 +80,8 @@ export default function RootLayout({
         <Navbar />
         <Loader />
         <div className="relative z-10 min-h-screen">
+          {/* Mobile-only scrim: darkens the 3D background for text readability on small screens */}
+          <div className="fixed inset-0 bg-black/60 pointer-events-none md:hidden" aria-hidden="true" />
           {children}
         </div>
         <Footer />

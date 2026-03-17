@@ -46,7 +46,7 @@ export default function Navbar() {
     return (
         <>
             <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 animate-in fade-in slide-in-from-top-4 duration-1000 w-full max-w-fit px-6">
-                <div className="glass px-6 md:px-10 py-3 rounded-full flex gap-6 md:gap-10 items-center text-xs font-medium tracking-widest text-white backdrop-blur-xl border border-white/10 bg-white/5 shadow-2xl shadow-black/20">
+                <div className="px-6 md:px-10 py-3 rounded-full flex gap-6 md:gap-10 items-center text-xs font-medium tracking-widest text-white backdrop-blur-xl border border-white/10 bg-white/5 shadow-2xl shadow-black/20">
                     <Link href="/" className="font-bold text-white tracking-tighter text-base hover:scale-105 transition-transform duration-300">TS</Link>
 
                     {/* Desktop Links */}
@@ -89,7 +89,7 @@ export default function Navbar() {
                         className="fixed inset-0 z-40 md:hidden pt-28 px-6"
                     >
                         <div className="absolute inset-0 bg-black/60 backdrop-blur-md" onClick={() => setIsOpen(false)} />
-                        <div className="relative glass rounded-3xl p-8 flex flex-col gap-8 items-center border border-white/10 bg-white/5 shadow-2xl">
+                        <div className="relative backdrop-blur-lg rounded-3xl p-8 flex flex-col gap-8 items-center border border-white/10 bg-white/5 shadow-2xl">
                             {navLinks.map((link) => (
                                 <Link
                                     key={link.name}
