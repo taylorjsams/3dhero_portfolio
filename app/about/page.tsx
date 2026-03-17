@@ -155,7 +155,7 @@ export default function About() {
                     </h2>
                     <div className="flex flex-wrap gap-2 pl-4 border-l border-white/10">
                         {["Product Design", "Design Systems", "Prototyping", "User Research", "Interaction Design", "Motion Design", "Figma", "Adobe Creative Suite", "3Ds Max + Vray", "HTML5/CSS3"].map((skill) => (
-                            <span key={skill} className="px-4 py-2 rounded-full border border-white/10 bg-white/5 text-sm text-silver backdrop-blur-sm hover:bg-white/10 transition-colors">
+                            <span key={skill} className="px-4 py-2 rounded-full border border-white/10 bg-zinc-900/80 text-sm text-silver backdrop-blur-sm hover:bg-white/10 transition-colors">
                                 {skill}
                             </span>
                         ))}
