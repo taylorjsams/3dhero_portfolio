@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Sun, Cloud, CloudRain, CloudSnow, CloudLightning, Wind, CloudFog, CloudDrizzle, CloudSun } from 'lucide-react'
+import PortalGlass from '@/components/dom/PortalGlass'
 
 interface WeatherData {
     temp: number
@@ -94,53 +95,57 @@ export default function WeatherWidget() {
     return (
         <motion.div
             whileHover={{ scale: 1.02 }}
-            className={`px-6 py-4 rounded-xl flex flex-col border border-white/10 bg-white/5 backdrop-blur-md relative overflow-hidden transition-all duration-500 ${weather?.isCloudy ? 'after:content-[""] after:absolute after:inset-0 after:bg-[url("https://grainy-gradients.vercel.app/noise.svg")] after:opacity-[0.03] after:pointer-events-none' : ''}`}
         >
-            <div className="flex justify-between items-start mb-4">
-                {getWeatherIcon()}
+            <PortalGlass 
+                className={`px-6 py-4 flex flex-col relative overflow-hidden transition-all duration-500 ${weather?.isCloudy ? 'after:content-[""] after:absolute after:inset-0 after:bg-[url("https://grainy-gradients.vercel.app/noise.svg")] after:opacity-[0.03] after:pointer-events-none' : ''}`}
+                glassClassName="rounded-xl border border-white/10 bg-white/5 backdrop-blur-md"
+            >
+                <div className="flex justify-between items-start mb-4 relative z-10">
+                    {getWeatherIcon()}
 
-                {/* Pulsing Dot */}
-                <div className="relative">
-                    <AnimatePresence mode="wait">
-                        <motion.div
-                            key={refreshKey}
-                            initial={{ scale: 1, opacity: 0.5 }}
-                            animate={{
-                                scale: [1, 1.5, 1],
-                                opacity: [0.5, 1, 0.5]
-                            }}
-                            className="w-1.5 h-1.5 rounded-full bg-emerald-400/80 shadow-[0_0_8px_rgba(52,211,153,0.5)]"
-                        />
-                    </AnimatePresence>
+                    {/* Pulsing Dot */}
+                    <div className="relative">
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                key={refreshKey}
+                                initial={{ scale: 1, opacity: 0.5 }}
+                                animate={{
+                                    scale: [1, 1.5, 1],
+                                    opacity: [0.5, 1, 0.5]
+                                }}
+                                className="w-1.5 h-1.5 rounded-full bg-emerald-400/80 shadow-[0_0_8px_rgba(52,211,153,0.5)]"
+                            />
+                        </AnimatePresence>
+                    </div>
                 </div>
-            </div>
 
-            <div className="flex items-baseline gap-1 mb-1">
-                <span className="text-4xl font-thin text-white tracking-tighter">
-                    {weather ? `${weather.temp}°F` : "--°F"}
-                </span>
-            </div>
-
-            <div className="flex flex-col gap-0.5">
-                <span className="text-[10px] text-silver font-medium tracking-[0.2em] uppercase">
-                    {weather?.condition || "LOADING..."}
-                </span>
-                <div className="flex items-center gap-2 text-silver">
-                    <Wind size={10} className="opacity-50" />
-                    <span className="text-[10px] tracking-widest uppercase">
-                        {weather ? `${weather.windDirection} ${weather.windSpeed} MPH` : "STABLE"}
+                <div className="flex items-baseline gap-1 mb-1 relative z-10">
+                    <span className="text-4xl font-thin text-white tracking-tighter">
+                        {weather ? `${weather.temp}°F` : "--°F"}
                     </span>
                 </div>
-            </div>
 
-            <div className="mt-4 pt-4 border-t border-white/5 flex justify-between items-center">
-                <span className="text-[8px] font-mono text-white/20 tracking-tighter uppercase">
-                    40.7128° N, 74.0060° W
-                </span>
-                <span className="text-[8px] font-mono text-white/10 uppercase tracking-widest">
-                    Live Terminal
-                </span>
-            </div>
+                <div className="flex flex-col gap-0.5 relative z-10">
+                    <span className="text-[10px] text-silver font-medium tracking-[0.2em] uppercase">
+                        {weather?.condition || "LOADING..."}
+                    </span>
+                    <div className="flex items-center gap-2 text-silver">
+                        <Wind size={10} className="opacity-50" />
+                        <span className="text-[10px] tracking-widest uppercase">
+                            {weather ? `${weather.windDirection} ${weather.windSpeed} MPH` : "STABLE"}
+                        </span>
+                    </div>
+                </div>
+
+                <div className="mt-4 pt-4 border-t border-white/5 flex justify-between items-center relative z-10">
+                    <span className="text-[8px] font-mono text-white/20 tracking-tighter uppercase">
+                        40.7128° N, 74.0060° W
+                    </span>
+                    <span className="text-[8px] font-mono text-white/10 uppercase tracking-widest">
+                        Live Terminal
+                    </span>
+                </div>
+            </PortalGlass>
         </motion.div>
     )
 }

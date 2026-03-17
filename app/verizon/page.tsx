@@ -8,6 +8,7 @@ import { clsx } from "clsx"
 import { MoveDownRight, Check, ListChecks, DatabaseZap, ChartColumn } from "lucide-react"
 import dynamic from 'next/dynamic'
 import ProjectNavigation from "@/components/case-study/ProjectNavigation"
+import PortalGlass from "@/components/dom/PortalGlass"
 
 const ImpactEffortScatterPlot = dynamic(() => import("@/components/verizon/ImpactEffortScatterPlot"), {
     loading: () => <div className="h-96 w-full animate-pulse bg-white/5 rounded-2xl border border-white/10" />
@@ -46,7 +47,10 @@ export default function VerizonPage() {
                                 This was the motivation behind our first engagement together - their internal sales tools have become a terribly inefficient mess and all attempts to design a solution have failed to yield any successful results. We don&apos;t have to design the whole thing today, but if we can paint an attractive picture of what this product might look like and give its stakeholders adequate research to justify building it, then we will have established ourselves as the go-to partner for complex, high-stakes enterprise transformations.
                             </p>
                         </div>
-                        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 backdrop-blur-lg">
+                        <PortalGlass 
+                            className="p-8 md:p-12"
+                            glassClassName="rounded-3xl bg-white/5 border border-white/10 backdrop-blur-lg"
+                        >
                             <h3 className="text-2xl text-white font-light mb-6">The Challenge</h3>
                             <div className="relative mb-8">
                                 <blockquote className="text-base text-white italic font-light leading-relaxed">
@@ -65,7 +69,7 @@ export default function VerizonPage() {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </PortalGlass>
                     </div>
                 </ContentSection>
             </div>
@@ -196,9 +200,13 @@ export default function VerizonPage() {
                                     ]
                                 }
                             ].map((persona, i) => (
-                                <div key={i} className="group relative flex flex-col bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm transition-colors hover:bg-white/[0.07]">
+                                <PortalGlass 
+                                    key={i} 
+                                    className="group relative flex flex-col p-8"
+                                    glassClassName="rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm transition-colors group-hover:bg-white/[0.07]"
+                                >
                                     {/* Persona Indicator Dot */}
-                                    <div className="absolute top-8 right-8 flex items-center justify-center pointer-events-none">
+                                    <div className="absolute top-8 right-8 flex items-center justify-center pointer-events-none z-10">
                                         <div className={clsx(
                                             "absolute w-4 h-4 rounded-full blur-md opacity-60",
                                             persona.personaType === 'sales' ? "bg-amber-500" :
@@ -213,7 +221,7 @@ export default function VerizonPage() {
                                         )} />
                                     </div>
 
-                                    <div className="flex items-center gap-6 mb-8">
+                                    <div className="flex items-center gap-6 mb-8 relative z-10">
                                         <div className="relative w-20 h-20 rounded-full overflow-hidden border border-white/10 shrink-0">
                                             <Image
                                                 src={persona.image}
@@ -228,14 +236,14 @@ export default function VerizonPage() {
                                         </div>
                                     </div>
 
-                                    <div className="mb-8">
+                                    <div className="mb-8 relative z-10">
                                         <h4 className="text-white text-sm uppercase tracking-[0.2em] font-medium mb-4">Problem Statement</h4>
                                         <p className="text-silver text-sm font-light leading-relaxed">
                                             &quot;{persona.problem}&quot;
                                         </p>
                                     </div>
 
-                                    <div className="mt-auto">
+                                    <div className="mt-auto relative z-10">
                                         <h4 className="text-white text-sm uppercase tracking-[0.2em] font-medium mb-4">Top Challenges</h4>
                                         <ul className="space-y-3">
                                             {persona.challenges.map((challenge, j) => (
@@ -246,7 +254,7 @@ export default function VerizonPage() {
                                             ))}
                                         </ul>
                                     </div>
-                                </div>
+                                </PortalGlass>
                             ))}
                         </div>
 

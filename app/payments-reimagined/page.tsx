@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import ProjectNavigation from "@/components/case-study/ProjectNavigation"
 import Link from 'next/link'
 import { ArrowLeft, Construction } from 'lucide-react'
+import PortalGlass from '@/components/dom/PortalGlass'
 
 export default function PaymentsPlaceholder() {
     return (
@@ -22,7 +23,10 @@ export default function PaymentsPlaceholder() {
                     transition={{ duration: 0.8 }}
                     className="relative z-10 w-full max-w-2xl text-center"
                 >
-                    <div className="p-12 md:p-20 rounded-[2rem] border border-white/10 backdrop-blur-lg bg-white/5 shadow-2xl relative overflow-hidden group">
+                    <PortalGlass 
+                        className="p-12 md:p-20 relative overflow-hidden group"
+                        glassClassName="rounded-[2rem] border border-white/10 backdrop-blur-lg bg-white/5 shadow-2xl"
+                    >
                         {/* Animated Glow */}
                         <div className="absolute -top-24 -left-24 w-48 h-48 bg-white/5 rounded-full blur-3xl group-hover:bg-white/10 transition-colors duration-700" />
 
@@ -49,7 +53,7 @@ export default function PaymentsPlaceholder() {
                             <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
                             Back to Works
                         </Link>
-                    </div>
+                    </PortalGlass>
                 </motion.div>
             </div>
 

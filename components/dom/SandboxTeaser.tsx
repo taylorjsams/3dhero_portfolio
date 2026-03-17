@@ -1,13 +1,17 @@
 import Section from "@/components/dom/Section"
 import { ArrowUpRight, Sparkles } from "lucide-react"
 import Link from "next/link"
+import PortalGlass from "@/components/dom/PortalGlass"
 
 export default function SandboxTeaser() {
     return (
         <Section className="min-h-screen flex flex-col items-center justify-center snap-start w-full max-w-7xl px-6 md:px-12 relative">
 
             <div className="w-full relative z-10 mb-8">
-                <div className="w-full rounded-[2.5rem] backdrop-blur-lg bg-white/5 border border-white/10 p-8 md:p-16 relative">
+                <PortalGlass 
+                    className="w-full p-8 md:p-16 relative"
+                    glassClassName="rounded-[2.5rem] backdrop-blur-lg bg-white/5 border border-white/10"
+                >
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                         {/* Left Column: Content */}
                         <div className="space-y-8 flex flex-col items-start text-left">
@@ -82,7 +86,7 @@ export default function SandboxTeaser() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </PortalGlass>
             </div>
         </Section>
     )

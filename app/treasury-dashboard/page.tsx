@@ -11,6 +11,7 @@ import SectionHeader from "@/components/case-study/SectionHeader"
 import Image from "next/image"
 import dynamic from 'next/dynamic'
 import ProjectNavigation from "@/components/case-study/ProjectNavigation"
+import PortalGlass from "@/components/dom/PortalGlass"
 
 const RelationalNodeMap = dynamic(() => import("@/components/case-study/RelationalNodeMap"), {
     loading: () => <div className="h-96 w-full animate-pulse bg-white/5 rounded-2xl border border-white/10" />
@@ -51,7 +52,10 @@ export default function TreasuryDashboardPage() {
                                 We designed a flexible dashboard that is highly adaptable, pulling together all relevant information for each unique client profile, highlighting critical tasks and alerts, and empowering users to proactively manage their day with clarity and confidence. It&apos;s about turning data frustration into decisive action, every single morning.
                             </p>
                         </div>
-                        <div className="bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 backdrop-blur-sm">
+                        <PortalGlass 
+                            className="p-8 md:p-12"
+                            glassClassName="rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm"
+                        >
                             <h3 className="text-white font-light text-2xl mb-6">The Challenge</h3>
                             <ul className="space-y-6 text-lg">
                                 {[
@@ -69,7 +73,7 @@ export default function TreasuryDashboardPage() {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </PortalGlass>
                     </div>
                 </ContentSection>
             </div>

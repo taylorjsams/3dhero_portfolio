@@ -36,7 +36,7 @@ export default function CaseStudyOverlay({ title, tags, description, role, durat
                 {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-8">
                     {tags.map((tag, i) => (
-                        <span key={i} className="px-3 py-1 rounded-full border border-white/10 bg-white/5 text-xs uppercase tracking-wider text-silver backdrop-blur-md">
+                        <span key={i} className="px-3 py-1 rounded-full border border-white/10 bg-zinc-900/80 text-xs uppercase tracking-wider text-silver">
                             {tag}
                         </span>
                     ))}
@@ -88,7 +88,7 @@ export default function CaseStudyOverlay({ title, tags, description, role, durat
                 >
                     <Link
                         href={href}
-                        className="inline-flex items-center gap-3 px-10 py-4 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl text-white text-xs uppercase tracking-[0.2em] font-light hover:bg-white/10 hover:border-white/30 transition-all duration-300 group"
+                        className="inline-flex items-center gap-3 px-10 py-4 rounded-full border border-white/10 bg-zinc-900/80 text-white text-xs uppercase tracking-[0.2em] font-light hover:bg-zinc-800/80 hover:border-white/30 transition-all duration-300 group"
                     >
                         View Project
                         <motion.div
