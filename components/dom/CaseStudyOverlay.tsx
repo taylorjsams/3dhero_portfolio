@@ -91,13 +91,7 @@ export default function CaseStudyOverlay({ title, tags, description, role, durat
                         className="inline-flex items-center gap-3 px-10 py-4 rounded-full border border-white/10 bg-zinc-900/80 text-white text-xs uppercase tracking-[0.2em] font-light hover:bg-zinc-800/80 hover:border-white/30 transition-all duration-300 group"
                     >
                         View Project
-                        <motion.div
-                            animate={{ x: 0, y: 0 }}
-                            whileHover={{ x: 2, y: -2 }}
-                            transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                        >
-                            <ArrowUpRight size={16} className="text-white/60 group-hover:text-white transition-colors" />
-                        </motion.div>
+                        <ArrowUpRight size={16} className="text-white/60 group-hover:text-white transition-colors" />
                     </Link>
                 </motion.div>
             </div>

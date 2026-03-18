@@ -8,7 +8,7 @@ export default function SandboxTeaser() {
         <Section className="min-h-screen flex flex-col items-center justify-center snap-start w-full max-w-7xl px-6 md:px-12 relative">
 
             <div className="w-full relative z-10 mb-8">
-                <PortalGlass 
+                <PortalGlass
                     className="w-full p-8 md:p-16 relative"
                     glassClassName="rounded-[2.5rem] backdrop-blur-lg bg-white/5 border border-white/10"
                 >
@@ -32,15 +32,13 @@ export default function SandboxTeaser() {
                                 I spent my early career obsessing over how people move through physical spaces—a discipline built on progam, materiality physics, and strict parameters. My Play page is where I continue to explore those threads in other mediums. It's a digital archive of the experiments, 3D sculptures, and prototypes that started as 'what if' moments and became a way for me to push the boundaries of what I can build.
                             </p>
 
-                            <div className="transform transition-transform hover:scale-105 active:scale-95 duration-200 inline-block">
+                            <div className="inline-block">
                                 <Link
                                     href="/play"
                                     className="inline-flex items-center gap-3 px-10 py-4 rounded-full border border-white/10 bg-white/5 text-white text-xs uppercase tracking-[0.2em] font-light hover:bg-white/10 hover:border-white/30 transition-all duration-300 group"
                                 >
                                     Jump into Sandbox
-                                    <div className="transform transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
-                                        <ArrowUpRight size={16} className="text-white/60 group-hover:text-white transition-colors" />
-                                    </div>
+                                    <ArrowUpRight size={16} className="text-white/60 group-hover:text-white transition-colors" />
                                 </Link>
                             </div>
                         </div>

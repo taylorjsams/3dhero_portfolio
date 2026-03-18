@@ -52,7 +52,7 @@ export default function TreasuryDashboardPage() {
                                 We designed a flexible dashboard that is highly adaptable, pulling together all relevant information for each unique client profile, highlighting critical tasks and alerts, and empowering users to proactively manage their day with clarity and confidence. It&apos;s about turning data frustration into decisive action, every single morning.
                             </p>
                         </div>
-                        <PortalGlass 
+                        <PortalGlass
                             className="p-8 md:p-12"
                             glassClassName="rounded-3xl bg-white/5 border border-white/10 backdrop-blur-sm"
                         >
@@ -110,9 +110,8 @@ export default function TreasuryDashboardPage() {
                                 alt="Legacy Interface"
                                 width={1600}
                                 height={1200}
-                                className="w-full h-auto transition-transform duration-700 group-hover:scale-105"
+                                className="w-full h-auto"
                             />
-                            {/* <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" /> */}
                         </div>
                     </div>
                 </ContentSection>

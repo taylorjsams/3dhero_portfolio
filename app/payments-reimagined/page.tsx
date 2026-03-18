@@ -23,7 +23,7 @@ export default function PaymentsPlaceholder() {
                     transition={{ duration: 0.8 }}
                     className="relative z-10 w-full max-w-2xl text-center"
                 >
-                    <PortalGlass 
+                    <PortalGlass
                         className="p-12 md:p-20 relative overflow-hidden group"
                         glassClassName="rounded-[2rem] border border-white/10 backdrop-blur-lg bg-white/5 shadow-2xl"
                     >
@@ -51,7 +51,7 @@ export default function PaymentsPlaceholder() {
 
                         <Link href="/#work" className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-white text-black text-xs uppercase tracking-widest font-bold hover:scale-105 active:scale-95 transition-all group">
                             <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
-                            Back to Works
+                            Back to home
                         </Link>
                     </PortalGlass>
                 </motion.div>
